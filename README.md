@@ -1,4 +1,4 @@
 
 # Third Eye
 
-Built for dot slash hackathon ! 
+Built for dot slash hackathon !
