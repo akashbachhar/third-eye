@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <title>Third Eye</title>
 </head>
+<style>
+    body{
+        background-color: #F0F2F5;
+    }
 
+    .header {
+        text-align: center;
+        margin: -10px -10px 10px -10px;
+        background-color: #FFFFFF;
+        font-size: 40px;
+        padding: 10px 5px;
+        color: red;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    }
+
+    .title_span {
+        font-weight: bold;
+        background-image: linear-gradient(to right, #0088FF, #A033FF);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .button{
+        background-color: #A033FF;
+        padding: 0.5rem 2rem;
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 0.5rem;
+    }
+</style>
 <body>
-<h1> Third Eye </h1>
-<a href="{% url 'live_page' %}">Live Page </a>
+<div class="header"><span class="title_span">Third Eye </span></div>
+<a class="button" href="{% url 'live_page' %}">Start Monitoring </a>
 </body>
 </html>

@@ -6,21 +6,53 @@
 </head>
 <style>
     body{
-        {#background-color: #beaaaa;#}
+        background-color: #F0F2F5;
     }
-    .body-class{
+    .header {
+        text-align: center;
+        margin: -10px -10px 10px -10px;
+        background-color: #FFFFFF;
+        font-size: 40px;
+        padding: 10px 5px;
+        color: red;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    }
+
+    .title_span {
+        font-weight: bold;
+        background-image: linear-gradient(to right, #0088FF, #A033FF);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .stream{
+        margin-top: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .live{
+        width: 70vw;
+        border-radius: 2rem;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    }
+    .button{
+        margin-top: 1rem;
+        background-color: #0088FF;
+        padding: 0.5rem 2rem;
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 0.5rem;
+    }
 </style>
 
 <body>
-<div class="body-class">
-    <h1> Third Eye </h1>
-    <img width="900px" src="{% url 'live' %}">
-    <a href="{% url 'home' %}"> Close Streming </a>
-</div>
+    <div class="header"><span class="title_span">Third Eye </span></div>
+    <div class="stream">
+        <img class="live" src="{% url 'live' %}">
+    <a class="button" href="{% url 'home' %}"> Stop Monitoring </a>
+    </div>
+
 
 </body>
 </html>
