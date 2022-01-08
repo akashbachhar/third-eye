@@ -7,6 +7,10 @@ def home(self):
     return render(self, 'drowsiness_detector/home.html')
 
 
+def live_page(self):
+    return render(self, 'drowsiness_detector/live.html')
+
+
 def gen(camera):
     while True:
         frame = camera.get_frame()
