@@ -5,7 +5,7 @@
     <title>Third Eye</title>
 </head>
 <style>
-    body{
+    body {
         background-color: #F0F2F5;
     }
 
@@ -25,7 +25,8 @@
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
-    .button{
+
+    .button {
         background-color: #A033FF;
         padding: 0.5rem 2rem;
         font-size: 1.2rem;
@@ -33,9 +34,44 @@
         text-decoration: none;
         border-radius: 0.5rem;
     }
+
+    .third-eye {
+        display: flex;
+        margin: 2rem 5rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        padding: 2rem;
+    }
+
+    .button-class {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 </style>
 <body>
 <div class="header"><span class="title_span">Third Eye </span></div>
-<a class="button" href="{% url 'live_page' %}">Start Monitoring </a>
+<div class="third-eye">
+    <div class="description">
+        According to a study by the Central Road Research Institute (CRRI), 21% of all fatal accidents are due to drowsy
+        driving. It's a serious issue and most people that have driven for long hours at night can relate to the fact
+        that fatigue and a slight brief state of unconsciousness can happen to anyone and everyone.
+        <br> <br>
+        From an e-rickshaw driver to taxi driver I created "Third Eye", a deep
+        learning and Django-based website (and mobile application in the future) that detects the drowsiness of the
+        driver in real-time with the help of eye blinking and yawning of the driver. After detection in two different
+        states, drowsing, and sleeping, it will immediately sound an alarm.
+        <br> <br>
+        Now, any driver can open the application, give the camera access, and put the mobile on the mobile holder in the
+        car, and be secure.
+    </div>
+    <img style="border-radius: 2rem" width="700px" src="https://i.ytimg.com/vi/hRZ0No7Oiu4/maxresdefault.jpg">
+</div>
+<div class="button-class">
+    <a class="button" href="{% url 'live_page' %}">Start Monitoring </a>
+</div>
+
 </body>
 </html>
