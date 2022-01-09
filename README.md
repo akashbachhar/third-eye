@@ -1,5 +1,5 @@
 # Third Eye
-
+This project is built for DotSlash 5.0 Hackathon :)
 ## Problem Statement
 
 According to a study by the Central Road Research Institute (CRRI), 21% of all fatal accidents are due to drowsy
